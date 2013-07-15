@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		Ruby on Rails Tutorial Sample App | <%= @title %>
+		
 		<title><%= title %></title>
 	<%= csrf_meta_tag %>
+	<%= stylesheet_link_tag "screen", :media => 'screen' %>
+	<%= stylesheet_link_tag "print", :media => 'print' %>
 	</head>
 	<body>
 		<%= yield %>
