@@ -30,7 +30,7 @@ describe User do
 		long_name = "a" * 51
 		long_name_user = User.new(@attr.merge(:name => long_name))
 		long_name_user.should_not be_valid
-		end
+	end
 		
 	 it "should accept valid email addresses" do
 		addresses = %w[user@foo.com THE_USER@foo.bar.org first.last@foo.jp]
